@@ -1,76 +1,81 @@
 /* Geral */
-:root{
-    --main-color:#d92123;
-    --primary-text-color:#fff;
+:root {
+    --main-color: #d92123;
+    --primary-text-color: #fff;
     --secondary-text-color: #191919;
-    --secondary-color:#868686;
-    --tertiary-color:#eff3f4;
+    --secondary-color: #868686;
+    --tertiary-color: #eff3f4;
 }
-*{
-    font-family:"lato";
+
+* {
+    font-family: "lato";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
-    width: 100%; /*todas as imagens respeitarao a largura do body(pai)*/
+img {
+    width: 100%;
+    /*todas as imagens respeitarao a largura do body(pai)*/
 }
 
-input[type="submit"]{
+input[type="submit"] {
     cursor: pointer;
 }
 
-i{
-    background-color:var(--main-color);
+i {
+    background-color: var(--main-color);
     color: var(--primary-text-color);
-    font-size: 2.5rem; /*O rem acompanha o tamanho da tela*/
+    font-size: 2.5rem;
+    /*O rem acompanha o tamanho da tela*/
     padding: 2rem;
 }
 
 /* Cabecalho e Banner */
-#header{
-    min-height: 90vh; /*VH refere a altura da tela*/
+#header {
+    min-height: 90vh;
+    /*VH refere a altura da tela*/
     background-image: url("../img/main_banner4.png");
     background-size: cover;
     background-position: center;
     color: var(--primary-text-color);
     margin-bottom: 2rem;
-    position: relative; /*Relativo é a area que limita o absoluto*/
+    position: relative;
+    /*Relativo é a area que limita o absoluto*/
 }
 
-#inner-header{
+#inner-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#brand{
+#brand {
     background-color: var(--main-color);
     padding: 1rem;
 }
 
-#navbar{
+#navbar {
     display: flex;
     gap: 4rem;
     text-transform: uppercase;
     margin-right: 2rem;
 }
 
-#navbar a{
+#navbar a {
     color: var(--primary-text-color);
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.banner.active{
+.banner.active {
     opacity: 1;
 }
 
-.banner{
+.banner {
     max-width: 50%;
     padding: 4rem;
     opacity: 0;
@@ -78,18 +83,18 @@ i{
     transition: 0.6s;
 }
 
-.banner h2{
+.banner h2 {
     font-size: 4rem;
     margin-bottom: 1.2rem;
     position: relative;
     z-index: 2;
 }
 
-.banner p{
+.banner p {
     font-size: 1.5rem;
 }
 
-.square{
+.square {
     display: block;
     width: 150px;
     height: 150px;
@@ -100,7 +105,7 @@ i{
     top: 40px;
 }
 
-.dots{
+.dots {
     display: flex;
     gap: 2rem;
     position: absolute;
@@ -108,25 +113,26 @@ i{
     left: 3rem;
 }
 
-.dot{
+.dot {
     width: 20px;
     height: 20px;
     background-color: var(--secondary-color);
 
 }
 
-.dot.active{
+.dot.active {
     background-color: var(--main-color);
 }
 
 /* Áreas de atuação */
-.text-image-section{
+.text-image-section {
     display: flex;
-    flex-wrap: wrap; /*Se a largura da div ultrapassar o limite da tela, uma div vai para debaixo da outra*/
+    flex-wrap: wrap;
+    /*Se a largura da div ultrapassar o limite da tela, uma div vai para debaixo da outra*/
     gap: 2rem;
 }
 
-.text-container{
+.text-container {
     flex: 2 1 0;
     display: flex;
     flex-direction: column;
@@ -135,19 +141,19 @@ i{
     text-align: right;
 }
 
-.section-subtitle{
+.section-subtitle {
     text-transform: uppercase;
     font-weight: bold;
     color: var(--main-color);
 }
 
-.section-title{
+.section-title {
     color: var(--secondary-text-color);
     font-size: 2rem;
 }
 
-.btn{
-    padding: 1.2rem 1.8rem ;
+.btn {
+    padding: 1.2rem 1.8rem;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: bold;
@@ -156,28 +162,28 @@ i{
     align-self: flex-end;
 }
 
-.image-container{
+.image-container {
     flex: 1 1 300px;
     position: relative;
 
 }
 
-.image-container i{
+.image-container i {
     position: absolute;
 }
 
-#other-services{
+#other-services {
     width: 100%;
     display: flex;
     gap: 2rem;
     padding: 2rem;
 }
 
-.service{
+.service {
     position: relative;
 }
 
-.service i{
+.service i {
     position: absolute;
     left: 0;
     top: 0;
@@ -185,7 +191,7 @@ i{
     font-size: 1.5rem;
 }
 
-.service-info{
+.service-info {
     background-color: var(--tertiary-color);
     padding: 2rem 1.4rem;
     min-height: 250px;
@@ -194,9 +200,129 @@ i{
     position: relative;
 }
 
-.service h4{
+.service h4 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
 }
 
+/* Sobre nós */
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+#about-text {
+    background-image: url("../img/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+}
+
+#about-text .section-subtitle,
+#about-text .section-title {
+    color: (var(--primary-text-color));
+}
+
+#about-text i {
+    background-color: transparent;
+}
+
+.about-description {
+    display: flex;
+    align-items: center;
+}
+
+.about-description h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+#about-data {
+    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#about-data .data {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+
+/*first-child é uma pseudaclasse*/
+#about-data .data:first-child {
+    border-bottom: 1px solid var(--secondary-text-color);
+    border-right: 1px solid var(--secondary-text-color);
+}
+
+#about-data .data:last-child {
+    border-top: 1px solid var(--secondary-text-color);
+    border-left: 1px solid var(--secondary-text-color);
+}
+
+#about-data .data i{
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 4rem;
+    padding: 0;
+}
+
+.data .number{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.data .text{
+    text-transform: uppercase;
+}
+
+/* Depoimentos */
+#testimonials{
+    display: flex;
+    align-items: center;
+}
+
+#testimonials-information{
+    padding: 3rem;
+}
+
+.author{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.author .author-name{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.author .author-job{
+    color: var(--secondary-text-color);
+}
+
+.author img{
+    width: 100px;
+    height: 100px;
+}
