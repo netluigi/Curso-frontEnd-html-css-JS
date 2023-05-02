@@ -628,4 +628,72 @@ i {
 
     /*Depoimentos*/
 
+    .text-container{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    /*Colaboradores*/
+
+    #team{
+        margin-top: 2rem;
+    }
+
+    #team h2{
+        font-size: 2rem;
+    }
+
+    .employees{
+        flex-wrap: wrap;
+    }
+
+    /* Contatos */
+
+    #contact{
+        padding-bottom: 0;
+
+    }
+
+    #contact-information{
+        padding: 7rem 1rem;
+    }
+
+    #contact-information .form-control{
+        flex-direction: column;
+    }
+
+    #contact-information .btn{
+        align-self: auto;
+    }
+
+    /* Rodape */
+    #footer{
+        flex-wrap: wrap;   
+    }
+
+    #footer i{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .footer-brand{
+        text-align: center;
+    }
+
+    .networks{
+        margin-bottom: 3rem;
+    }
+
+    .links-container{
+        margin-bottom: 1rem;
+    }
+
+    .links-container h4{
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info, .links-container {
+        width: 100%;
+    }
+
 }
